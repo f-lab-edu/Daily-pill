@@ -13,6 +13,10 @@ export default {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.min.js",
   },
+  devServer: {
+    hot: true,
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
